@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Create python virtual environmant
 sudo apt install virtualenv -y
