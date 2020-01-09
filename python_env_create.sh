@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 # Install python 3.7
 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget -y
@@ -7,10 +7,3 @@ tar -xf Python-3.7.4.tar.xz
 cd Python-3.7.4
 ./configure --enable-optimizations
 sudo make altinstall
-
-# Create python virtual environmant
-sudo apt install virtualenv -y
-wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/spyrouath/scripts/master/venv_requirements.txt -P /home/sshuser
-sudo virtualenv -p /usr/local/bin/python3.7 venv
-sudo chmod 755 /home/sshuser/venv
-sudo /home/sshuser/venv/bin/pip3.7 install -r /home/sshuser/venv_requirements.txt
