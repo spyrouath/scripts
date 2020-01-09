@@ -12,9 +12,9 @@ sudo make altinstall
 # Create python virtual environmant
 sudo apt install virtualenv -y
 apt install wget -y
+sudo rm /home/sshuser/venv_requirements.txt
 wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/spyrouath/scripts/master/venv_requirements.txt
 rm -rf venv
 virtualenv -p /usr/local/bin/python3.7 venv
 sudo chmod 755 /home/sshuser/venv
-source /home/sshuser/venv/bin/activate
-sudo pip install -r /home/sshuser/venv_requirements.txt
+sudo /home/sshuser/venv/bin/pip3.7 install -r /home/sshuser/venv_requirements.txt
