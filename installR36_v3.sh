@@ -2,9 +2,7 @@
 
 sudo apt update
 sudo apt -y upgrade
-# install Java
-sudo apt install openjdk-11-jdk
-sudo R CMD javareconf
+
 # install system dependencies
 sudo apt install unixodbc-dev
 sudo apt install libcurl4-openssl-dev
