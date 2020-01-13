@@ -1,7 +1,9 @@
 #!/bin/bash
 
-sudo apt update
-sudo apt -y upgrade
+sudo dpkg --configure -a
+
+sudo apt update -y
+sudo apt upgrade -y
 
 # install system dependencies
 sudo apt install unixodbc-dev
