@@ -10,6 +10,7 @@ sudo tar -xf /home/sshuser/Python-3.7.4.tar.xz -C /home/sshuser
 sudo chmod 755 /home/sshuser/Python-3.7.4
 cd /home/sshuser/Python-3.7.4
 sudo ./configure --enable-optimizations --enable-loadable-sqlite-extensions
+sudo make
 sudo make altinstall
 
 # Create python virtual environmant
