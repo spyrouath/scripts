@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo chmod 755 /home/sshuser/venv
 sudo rm -rf /home/sshuser/venv
 
 sudo rm /home/sshuser/venv_requirements.*
